@@ -8,16 +8,16 @@ header {
   z-index:99;
 }
 .button {
-	  background-color: white;
-    color: black;
-    border: 3px solid #8B572A; 
-    padding: 10px 20px;
+    background-color:white;
+    border: 3px solid #6A0000;
+    color: white;
+    padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     font-weight: bold; 
-	 border-radius:4px;
+	  border-radius:4px;
 }
 #center {
   width: 50%;
