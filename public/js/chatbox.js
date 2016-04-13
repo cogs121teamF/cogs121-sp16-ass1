@@ -29,7 +29,7 @@
                 template.message +
                 '</div>' +
                 '<div class="shame">' + 
-                '<img src="http://emojipedia-us.s3.amazonaws.com/cache/8c/65/8c65e5de808ec301754508366480250c.png" id="{{_id}}" class="shameButton" height="25" width="25">' + '<p>' +
+                '<img src="img/shame.png" id="{{_id}}" class="shameButton" height="45" width="100">' + '<p>' +
                 template.shameCount + '</p>' + 
                 '</div>';
             return result;
