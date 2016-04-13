@@ -21,4 +21,10 @@
     String.prototype.contains = function(substring) {
         return this.indexOf(substring) > -1;
     };
+
+    $(".shameButton").click(function(){
+      $.post('/shameCountInc', {
+        id : $(this).attr('id')
+      })
+    });
 })($);

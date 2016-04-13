@@ -99,6 +99,7 @@ app.get("/logout", function(req, res) {
 	req.logout();
 	res.redirect('/');
 });
+app.post("/shameCountInc", router.chat.inc);
 
 io.use(function(socket, next) {
     session_middleware(socket.request, {}, next);
@@ -114,7 +115,8 @@ io.on("connection", function(socket) {
 		models.Newsfeed.create({
 			"user": socket.request.session.passport.user.displayName,
 			"message": msg,
-			"picture": socket.request.session.passport.user.photos[0].value
+			"picture": socket.request.session.passport.user.photos[0].value,
+			"shameCount" : 0
 		}, function(err, newNewsFeed) {
 			console.log("message: " + msg);
 			console.log(newNewsFeed);
