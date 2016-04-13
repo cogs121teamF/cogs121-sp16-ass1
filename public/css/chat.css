@@ -6,28 +6,32 @@ body {
 header {
 	opacity:0.7;
 }
-.search-icon {
-	color:#6A0000;
+.button {
+	background-color: white;
+    color: black;
+    border: 3px solid #8B572A; 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold; 
+	border-radius:4px;
 }
 #center {
   width: 50%;
   height: 50%;
   position: relative;
   top: 22%;
-  /*bottom: 0;
-  left: 0;
-  right: 0;*/
   margin: auto;
   text-align: center;
 }
-
 #img_logo {
   width: 30%;
   height: 30%;
   margin-left: auto;
   margin-right: auto; 
   padding-bottom: 20px; 
-  
 }
 #logout {
 	color:#6A0000;
