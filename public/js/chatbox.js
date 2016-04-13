@@ -29,8 +29,8 @@
                 template.message +
                 '</div>' +
                 '<div class="shameButton">' + 
-                '<button type="button" id="{{_id}}"class="button" "button">' +
-                '<img src="img/shamewitheyes.png" id="{{_id}}" class="shameButton" height="45" width="100">' + '<p>' +
+                '<button type="button" id="{{_id}}"class="button">' +
+                '<img src="img/shamewitheyes.png" height="30" width="120">' + '<p>' +
                 template.shameCount + '</p>' + 
                 '</div>';
             return result;
