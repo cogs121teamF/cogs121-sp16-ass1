@@ -1,0 +1,82 @@
+body {
+  background: #E0E0B0;
+  height: 100vh;
+  width: 100%;
+}
+
+#footer {
+  position: fixed;
+  z-index: 100; 
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  font-size: 0.5em;
+  text-align: center;
+}
+
+#center {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  top: 22%;
+  /*bottom: 0;
+  left: 0;
+  right: 0;*/
+  margin: auto;
+  text-align: center;
+}
+
+#logo {
+
+  /*height: 400px;*/
+  /*width: 400px;*/
+
+}
+
+#img_logo {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* For size on laptop */
+@media(min-width: 500px){
+  #img_logo {
+    width: 60%;
+    height: 60%;
+    /*margin: 0 auto;*/
+    position: relative;
+  }
+}
+
+#login {
+  margin-top: 20px;
+}
+
+#login_button {
+  text-align: center;
+  display: block;
+  width: 150px;
+  height: 25px;
+  margin-top: 15px;
+  margin: 0 auto;
+  background: #A74E0E;
+  padding: 12px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
