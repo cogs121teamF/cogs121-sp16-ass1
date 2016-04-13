@@ -1,0 +1,41 @@
+body {
+  background: #E1C2A6;
+  height: 100vh;
+  width: 100%;
+}
+header {
+	opacity:0.7;
+}
+.search-icon {
+	color:#6A0000;
+}
+#center {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  top: 22%;
+  /*bottom: 0;
+  left: 0;
+  right: 0;*/
+  margin: auto;
+  text-align: center;
+}
+
+#img_logo {
+  width: 30%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto; 
+  padding-bottom: 20px; 
+  
+}
+#logout {
+	color:#6A0000;
+	font-weight: bold; 
+}
+#messages {
+	border:1px #ffffff; 
+}
+#send_message {
+	border:1px #ffffff; 
+}
