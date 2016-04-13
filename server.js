@@ -5,7 +5,7 @@ const http = require("http").createServer(app);
 const io = require("socket.io")(http);
 const path = require("path");
 const session = require("express-session");
-const MongoStore = require("connect-mongo")(session);
+const MongoStore = require("connect-mongo/es5")(session);
 const mongoose = require("mongoose");
 const handlebars = require("express-handlebars");
 const DB = 'mongodb://austin:austin@ds019480.mlab.com:19480/cogs121'
@@ -14,7 +14,7 @@ const DB = 'mongodb://austin:austin@ds019480.mlab.com:19480/cogs121'
 require("dotenv").load();
 var models = require("./models");
 
-var router = { 
+var router = {
 	index: require("./routes/index"),
 	chat: require("./routes/chat")
 };
@@ -74,7 +74,7 @@ passport.use(new TwitterStrategy({
     			"photo": profile.photos[0].value
     		})
         	return done(null, profile);
-    	} 
+    	}
     	else {
         	process.nextTick(function() {
             	return done(null, profile);
@@ -115,7 +115,7 @@ io.on("connection", function(socket) {
 			"user": socket.request.session.passport.user.displayName,
 			"message": msg,
 			"picture": socket.request.session.passport.user.photos[0].value
-		}, (err, newNewsFeed) => {
+		}, function(err, newNewsFeed) {
 			console.log("message: " + msg);
 			console.log(newNewsFeed);
 			io.emit("newsfeed", newNewsFeed);
