@@ -25,6 +25,8 @@
     $(".shameButton").click(function(){
       $.post('/shameCountInc', {
         id : $(this).attr('id')
-      })
+      });
+      var currentVote = $(this).next('p');
+      currentVote.text(Number(currentVote.text()) +  1 );
     });
 })($);
