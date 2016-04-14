@@ -24,7 +24,7 @@
         </form>
         <br>
         <form id="send_message2" action="">
-            <input id="user_input2" placeholder="Optional: Add the url of a bad parking picture here." autocomplete="off" />
+            <input id="user_input2" placeholder="Optional: Add the URL of a bad parking picture here." autocomplete="off" />
         </form>
         <ul id="messages">
             {{#each newsfeed}}
@@ -44,15 +44,16 @@
                     {{message}}
                     <p><img src="{{carpicture}}" alt=""></p>
                 </div>
-                <div class="shameButton"><button type="button" id="{{_id}}" class="button"><img src="img/shamewitheyes.png" height="30" width="120"></button></div>
-                <p>{{shameCount}}</p>
+                <button type="button" id="{{_id}}" class="shameButton button"><img src="img/shamewitheyes.png" height="30" width="120"></button>
+                <p>{{shameCount}} shames</p>
             </li>
             {{/each}}
         </ul>
     </div>
 </section>
 <footer>
-    &copy; 2016. POOPARK
+    &copy; 2016. POOPARK </br>
+    Need help? Contact us at poopark@github.com.
 </footer>
 <script src="./js/jquery.min.js"></script>
 <script src="./js/socket.io.min.js"></script>
