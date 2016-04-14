@@ -119,8 +119,8 @@ io.on("connection", function(socket) {
 			"shameCount" : 0,
       "carpicture": msg2
 		}, function(err, newNewsFeed) {
-			console.log("message: " + msg);
-			console.log(newNewsFeed);
+			//console.log("message: " + msg);
+			//console.log(newNewsFeed);
 			io.emit("newsfeed", newNewsFeed);
 		});
 	});

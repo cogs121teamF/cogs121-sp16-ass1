@@ -2,8 +2,8 @@
     "use strict";
     var socket = io();
     $('form').submit(function(){
-        if($('#user_input2').val().match(/\.(jpeg|jpg|png)$/) == null)
-            alert("URL must end in .png, .jpg, or .jpeg");
+        if($('#user_input2').val() != "" && $('#user_input2').val().match(/\.(jpeg|jpg|png)$/) == null)
+            alert("URL field must be empty or end in .png, .jpg, or .jpeg");
         else {
             socket.emit('newsfeed', $('#user_input').val(), $('#user_input2').val());
             $('#user_input').val('');
@@ -17,7 +17,7 @@
 
     socket.on("newsfeed", function(data) {
         var parsedData = data;
-        console.log(parsedData);
+        //console.log(parsedData);
 
         $('#messages').append($('<li>').html(messageTemplate(parsedData)));
 

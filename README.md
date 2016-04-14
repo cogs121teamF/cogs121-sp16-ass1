@@ -14,6 +14,7 @@ WORK DISTRIBUTION
 	Austin
 	- worked on socket.io 
         - implemented the ability to add an image to a newsfeed post
+
 HEURISTICS
 1. Visibility of system status
 When users are being authenticated through their twitter account, they are taken to a page that tells them that they are being redirected, which allows them to see the current system status while they are waiting. 
