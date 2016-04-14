@@ -2,8 +2,9 @@
     "use strict";
     var socket = io();
     $('form').submit(function(){
-        socket.emit('newsfeed', $('#user_input').val());
+        socket.emit('newsfeed', $('#user_input').val(), $('#user_input2').val());
         $('#user_input').val('');
+        $('#user_input2').val('');
         return false;
     });
     /*socket.on('chat message', function(msg){
@@ -12,6 +13,7 @@
 
     socket.on("newsfeed", function(data) {
         var parsedData = data;
+        console.log(parsedData);
 
         $('#messages').append($('<li>').html(messageTemplate(parsedData)));
 
@@ -27,6 +29,7 @@
                 '</div>' +
                 '<div class="message-content">' +
                 template.message +
+                '<p><img src="' + template.carpicture + '" alt=""></p>' +
                 '</div>' +
                 '<div class="shameButton">' + 
                 '<button type="button" id="{{_id}}"class="button">' +

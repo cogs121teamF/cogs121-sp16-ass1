@@ -44,3 +44,11 @@ header {
 #send_message {
 	border:1px #ffffff;
 }
+#send_message2 {
+  border:1px #ffffff;
+}
+
+div img{
+  max-width: 500px; 
+  max-height: 500px;
+}

@@ -17,11 +17,14 @@ Method for incrementing the "shame count" for each post
 */
 exports.inc = function(req,res) {
 	console.log("being called?");
+	//console.log(res);
 	mongoose.model('Newsfeed').findOne({_id : req.body.id}).exec(function(err,newsfeeds) {
-	  if(err) {
-	  }
-	  newsfeeds.shameCount++;
-		newsfeeds.save();
+		if(err) {
+	  	}
+	  	if(newsfeeds != null) {
+	  		newsfeeds.shameCount++;
+			newsfeeds.save();
+		}
 		res.redirect(req.get('referer'));
 	});
 }

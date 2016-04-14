@@ -111,12 +111,13 @@ io.use(function(socket, next) {
 });*/
 
 io.on("connection", function(socket) {
-	socket.on("newsfeed", function(msg) {
+	socket.on("newsfeed", function(msg, msg2) {
 		models.Newsfeed.create({
 			"user": socket.request.session.passport.user.displayName,
 			"message": msg,
 			"picture": socket.request.session.passport.user.photos[0].value,
-			"shameCount" : 0
+			"shameCount" : 0,
+            "carpicture": msg2
 		}, function(err, newNewsFeed) {
 			console.log("message: " + msg);
 			console.log(newNewsFeed);

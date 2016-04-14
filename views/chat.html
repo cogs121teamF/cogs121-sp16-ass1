@@ -22,6 +22,10 @@
         <form id="send_message" action="">
             <input id="user_input" placeholder="Type a new poopost and hit enter!" autocomplete="off" />
         </form>
+        <br>
+        <form id="send_message2" action="">
+            <input id="user_input2" placeholder="Optional: Add the url of a bad parking picture here." autocomplete="off" />
+        </form>
         <ul id="messages">
             {{#each newsfeed}}
             <hr>
@@ -38,6 +42,7 @@
                 </div>
                 <div class="message-content">
                     {{message}}
+                    <p><img src="{{carpicture}}" alt=""></p>
                 </div>
                 <div class="shameButton"><button type="button" id="{{_id}}" class="button"><img src="img/shamewitheyes.png" height="30" width="120"></button></div>
                 <p>{{shameCount}}</p>
