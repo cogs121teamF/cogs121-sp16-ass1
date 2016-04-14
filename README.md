@@ -40,4 +40,7 @@ Our user interface is as minimal as possible because it only requires the user t
 Error message indicating that user supplied invalid picture url tells user what the problem is so that they can pick a different url.
 
 9. Help and documentation
-In the footer area, there is information provided to contact us if the user needs help so that the user can easily find help by inquiring poopark@github.com their issue. 
+In the footer area, there is information provided to contact us if the user needs help so that the user can easily find help by inquiring poopark@github.com their issue.
+
+10. User control and freedom
+User has the ability to logout with the top right logout button and go to the previous screen in the case that they are logged in the wrong account. 
