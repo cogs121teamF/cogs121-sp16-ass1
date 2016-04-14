@@ -117,7 +117,7 @@ io.on("connection", function(socket) {
 			"message": msg,
 			"picture": socket.request.session.passport.user.photos[0].value,
 			"shameCount" : 0,
-            "carpicture": msg2
+      "carpicture": msg2
 		}, function(err, newNewsFeed) {
 			console.log("message: " + msg);
 			console.log(newNewsFeed);
