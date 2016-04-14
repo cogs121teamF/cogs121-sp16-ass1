@@ -127,6 +127,6 @@ io.on("connection", function(socket) {
 });
 
 // Start Server
-http.listen(app.get("port") || process.env.PORT, function() {
+http.listen(process.env.PORT || app.get("port"), function() {
     console.log("Express server listening on port " + app.get("port"));
 });
