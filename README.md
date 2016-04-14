@@ -3,8 +3,9 @@
 WORK DISTRIBUTION
 	Annie 
 	- designed logo & shame button
-	- contributed to chat.css, chat.html, and index.css & overall improving aesthetic design of website
-	Gabe
+	- contributed to chat.css, chat.html, and index.css & overall improving aesthetic design of website 
+	Gabe 
+	- Implemented the "shaming" feature through modifications to the handlebars files, routes, search.js, and model. 
 	Pedro
 	Emily
 	Austin

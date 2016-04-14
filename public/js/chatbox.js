@@ -2,9 +2,13 @@
     "use strict";
     var socket = io();
     $('form').submit(function(){
-        socket.emit('newsfeed', $('#user_input').val(), $('#user_input2').val());
-        $('#user_input').val('');
-        $('#user_input2').val('');
+        if($('#user_input2').val().match(/\.(jpeg|jpg|png)$/) == null)
+            alert("URL must end in .png, .jpg, or .jpeg");
+        else {
+            socket.emit('newsfeed', $('#user_input').val(), $('#user_input2').val());
+            $('#user_input').val('');
+            $('#user_input2').val('');
+        }
         return false;
     });
     /*socket.on('chat message', function(msg){
