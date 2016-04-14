@@ -32,9 +32,9 @@
               id : $(this).attr('id')
             });
             var currentVote = $(this).next('p');
-            currentVote.text(Number(currentVote.text()) +  1 );
+            currentVote.text((Number(currentVote.text().split(" ")[0]) +  1 ) + " shames");
             $(this).addClass("alreadyClicked");
-            $(this).css('border', "solid 2px red"); 
+            $(this).css('border', "solid 2px red");
           }
         });
 })($);
