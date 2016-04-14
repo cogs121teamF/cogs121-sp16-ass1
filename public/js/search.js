@@ -23,10 +23,18 @@
     };
 
     $(".shameButton").click(function(){
-      $.post('/shameCountInc', {
-        id : $(this).attr('id')
-      });
-      var currentVote = $(this).next('p');
-      currentVote.text(Number(currentVote.text()) +  1 );
-    });
+          if($(this).hasClass("alreadyClicked"))
+          {
+            return;
+          }
+          else{
+            $.post('/shameCountInc', {
+              id : $(this).attr('id')
+            });
+            var currentVote = $(this).next('p');
+            currentVote.text(Number(currentVote.text()) +  1 );
+            $(this).addClass("alreadyClicked");
+            $(this).css('border', "solid 2px red"); 
+          }
+        });
 })($);
