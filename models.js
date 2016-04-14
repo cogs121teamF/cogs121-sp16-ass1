@@ -13,8 +13,8 @@ const NewsFeedSchema = new Schema({
 	"user": String,
 	"message": String,
 	"picture": String,
-    "shameCount" : Number,
-    "carpicture": String,
+  "shameCount" : Number,
+  "carpicture": String,
 	"posted": { type: Date, default: Date.now }
 });
 

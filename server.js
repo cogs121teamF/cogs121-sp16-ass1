@@ -117,7 +117,7 @@ io.on("connection", function(socket) {
 			"message": msg,
 			"picture": socket.request.session.passport.user.photos[0].value,
 			"shameCount" : 0,
-            "carpicture": msg2
+      "carpicture": msg2
 		}, function(err, newNewsFeed) {
 			console.log("message: " + msg);
 			console.log(newNewsFeed);
@@ -127,6 +127,6 @@ io.on("connection", function(socket) {
 });
 
 // Start Server
-http.listen(app.get("port"), function() {
+http.listen(process.env.PORT || app.get("port"), function() {
     console.log("Express server listening on port " + app.get("port"));
 });
