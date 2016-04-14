@@ -18,7 +18,7 @@ body {
   width: 50%;
   height: 50%;
   position: relative;
-  top: 22%;
+  top: 12%;
   /*bottom: 0;
   left: 0;
   right: 0;*/
@@ -66,6 +66,9 @@ body {
   border-radius: 5px;
   color: white;
   font-weight: bold;
+}
+#login_button:hover {
+  background-color: #6A0000;
 }
 
 a {
